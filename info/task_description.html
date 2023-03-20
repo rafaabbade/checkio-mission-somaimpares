@@ -1,16 +1,16 @@
 <!-- Describe task in general -->
 
 <p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
+    Escreva uma função que recebe uma lista de números e retorne a soma dos elementos ímpares da lista.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> A entrada consiste em uma lista de números inteiros. A lista pode ser vazia ou ter até 100 elementos.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong> A função deve retornar um número inteiro representando a soma dos elementos ímpares da lista.
 </p>
 
 
@@ -25,9 +25,12 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">
+soma_impares([1, 2, 3, 4, 5]) == 9 
+soma_impares([2, 4, 6, 8]) == 0
+soma_impares([1, 3, 5, 7, 9]) == 25 
+soma_impares([10, 11, 12, 13, 14, 15]) == 39 
+soma_impares([]) == 0
 </pre>
 {% endif %}
 </div>
